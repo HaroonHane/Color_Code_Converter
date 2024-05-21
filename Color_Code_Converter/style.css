@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, rgba(130, 115, 92, 0.518),rgba(186, 212, 172, 0.468),rgba(2, 182, 62, 0.27));
+}
+
+input {
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  border: 2px solid rgba(63, 60, 60, 0.902);
+  border-radius: 10px;
+
+}
+
+input:focus {
+  box-decoration-break: clone;
+  border: 2px solid rgba(31, 125, 34, 0.902);
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  margin-top: 5vh;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border-top: 2px solid rgba(42, 42, 42, 0.409);
+  background-color: #63616189;
+  color: #fff;
+  font-weight: 500
+}
+
+h1 {
+  margin-bottom: 5%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-variant: small-caps slashed-zero;
+}
+/* select color code */
+#selectColorCode {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #5b585874, #4f4b4b6e);
+  color: #fff;
+}
+/* Style the color code input field when it is focused */
+#selectColorCode:focus {
+  border: none;
+  border-radius: 10px;
+  background-color: #8e898963;
+}
+/* color container, 60px circle */
+#selectColorCode>option {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(34, 33, 33, 0.387);
+  border: none;
+
+}
+/* Set container size & shape */
+#colorContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
